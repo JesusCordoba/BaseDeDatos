@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creació d'un nou comentari" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nou_nom_com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Posar nom al nou comentari" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nou_txt_com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Text del nou comentari" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_crear_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccioni un comentari" />
+
+    <Spinner
+        android:id="@+id/spn_sel_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_veure_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Veure" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Veure comentari" />
+
+    <TextView
+        android:id="@+id/txt_veure_nom"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txt_veure_com"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_elim_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar" />
+
+</LinearLayout>
